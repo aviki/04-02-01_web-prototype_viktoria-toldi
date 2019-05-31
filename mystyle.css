@@ -1,8 +1,8 @@
 @font-face {
-font-family: 'Helvetica Neue LT Std 57 Condensed';
-font-style: normal;
-font-weight: normal;
-src: url('HelveticaNeueLTStd-Cn.woff');
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('HelveticaNeueLTStd-Cn.woff') format('woff');
 }
 
 *{
@@ -12,12 +12,19 @@ src: url('HelveticaNeueLTStd-Cn.woff');
 }
 
 html{
+  font-family: Helvetica;
   background-color: #ea4d44;
+}
+
+.index{
+  background-color: #ffffff;
 }
 
 #login{
   color: #1b1b1b;
-  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
   height: 100%;
   border-color: none;
   background-color: #ea4d44;
@@ -25,22 +32,33 @@ html{
 
 #loginLogo{
   width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
 }
 input{
   display: block;
   width: 100%;
   border: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 label{
-
+  margin-bottom: 10px;
 }
 
 button[type="submit"]{
   background-color: #1b1b1b;
   color: #ffffff;
   font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
 }
 
 .title{
@@ -55,7 +73,7 @@ button[type="submit"]{
   margin: 20px auto;
   width:400px;
   height:400px;
-  background-color: #ea4d44;
+  background-color: #ffffff;
   display:grid;
   grid-template-columns: 200px 200px;
   grid-row: auto auto;
@@ -64,7 +82,7 @@ button[type="submit"]{
 }
 
   .box{
-    background-color:#ffffff;
+    background-color:#ea4d44;
     padding:20px;
     border-radius:10px;
     color:#1b1b1b;
@@ -95,4 +113,16 @@ button[type="submit"]{
 
 .box:hover {
   animation: shake 2s;
+}
+
+#upload{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+a{
+  text-decoration: none;
+  color:#1b1b1b;
 }
