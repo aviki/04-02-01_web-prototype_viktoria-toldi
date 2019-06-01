@@ -141,12 +141,29 @@ button[type="submit"]{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 80px;
   color: white;
   font-weight: bold;
+  display: block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-top: 50px;
 }
 
-a{
+.anchor{
   text-decoration: none;
   color:#1b1b1b;
+}
+
+@media only screen and(max-width: 768px) {
+  .header{
+    padding-top: 500px;
+  }
+
+}
+
+#logButton{
+  text-decoration: none;
+  color: white;
 }
