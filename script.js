@@ -6,3 +6,8 @@ function shakeBOX1() {
     document.location = "submission.html";
   }, 2000);
 }
+
+var div = document.getElementById("redDiv");
+function green(){
+  div.setAttribute("id", "greenDiv");
+}
